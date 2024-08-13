@@ -1,0 +1,152 @@
+@import '../../styles/variabels';
+
+.wrapper {
+  width: 1224px;
+  height: 416px;
+  margin: 24px 0 0 71px;
+  padding-top: 24px;
+
+  background-image: url('../../assets/CourseCover/bgImg.png');
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 20px;
+  color: #fff;
+  .opacity {
+    height: 416px;
+    border-radius: 20px;
+    margin-top: -25px;
+    background: rgba(0, 0, 0, 0.55);
+  }
+}
+
+.info {
+  margin-left: 42px;
+  padding-top: 24px;
+
+  .back {
+    display: flex;
+    width: 77px;
+    height: 24px;
+    gap: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: transparent;
+    background: transparent;
+  }
+
+  h1 {
+    margin-top: 24px;
+    font-size: 32px;
+    line-height: 44px;
+
+    font-weight: 700;
+  }
+}
+
+.list {
+  display: flex;
+  margin-top: 24px;
+  gap: 10px;
+
+  ul {
+    display: flex;
+    gap: 24px;
+
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+
+    li {
+      width: auto;
+      height: 24px;
+      padding: 6px 12px 6px 12px;
+
+      border-radius: 8px;
+
+      background-color: #fff;
+      color: $font-black;
+    }
+  }
+  button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 43px;
+    height: 24px;
+    border-radius: 8px;
+    border: 1px solid $font-desc;
+    background-color:#fff;
+
+    color: $buttun-color;
+
+    font-size: 14px;
+  }
+}
+
+.infoForCourse {
+  display: flex;
+  padding-left: 42px;
+  margin-top: 32px;
+  gap: 24px;
+  li {
+    display: flex;
+    gap: 12px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 12px;
+      color: $font-desc;
+    }
+  }
+}
+
+.rating {
+  display: flex;
+  width: 1140px;
+
+  padding-left: 42px;
+  gap: 24px;
+  margin-top: 24px;
+
+  li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    letter-spacing: 0.75px;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      background: rgba(0, 0, 0, 0.24);
+      border-radius: 50%;
+    }
+  }
+}
+
+.start {
+  margin: 32px 0 0 42px;
+  width: 200px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  background: $buttun-color;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}

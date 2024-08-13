@@ -1,0 +1,51 @@
+@import '../../styles/variabels';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 1224px;
+  height: 144px;
+
+  margin-top: 14px;
+  margin-left: 71px;
+
+  ul {
+    display: flex;
+    align-items:center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    li {
+      border-radius: 10px;
+      padding: 6px 12px 6px 12px;
+      background-color: $desc-comp;
+      color: $font-gray;
+    }
+    button {
+      display: flex;
+      width: 118px;
+      height: 20px;
+      gap:4px;
+
+      justify-content: center;
+      align-items:center;
+
+      border:none;
+      background-color:#fff;
+
+
+      color: $buttun-color;
+
+    }
+    button:hover {
+      cursor: pointer;
+    }
+    li:hover {
+      cursor: pointer;
+    }
+  }
+}

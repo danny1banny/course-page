@@ -1,0 +1,101 @@
+@import '../../styles/variabels';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  margin-left: 71px;
+  color: $font-black;
+  .title {
+    display: flex;
+    width: 1224px;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      width: 140px;
+      height: 40px;
+      margin-bottom: 8px;
+      color: #fff;
+      background-color: $buttun-color;
+      border-radius: 10px;
+      border: none;
+    }
+    button:hover {
+      cursor: pointer;
+    }
+  }
+
+  .listTask {
+    display: flex;
+    flex-direction: column;
+    width: 1224px;
+
+    .task {
+      display: flex;
+      margin-top: 16px;
+      padding: 16px 0 16px 26px;
+      border-radius: 12px;
+      border: 1px solid $border-color;
+      align-items: center;
+
+      h3 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-top: 4px;
+      }
+      .desc {
+        display: flex;
+        margin-left: 12px;
+        flex-direction: column;
+        width: 519px;
+
+        p {
+          width: max-content;
+          color: #c1c1c1;
+          border-radius: 8px;
+          margin-top: 4px;
+
+          font-size: 14px;
+          line-height: 12px;
+          font-weight: 500;
+        }
+      }
+      .subTitle {
+        display: flex;
+        align-items: center;
+        width: 365px;
+        gap: 8px;
+        margin-left: 129px;
+        color: $font-gray;
+        font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+      }
+      .buttons {
+        display: flex;
+        width: 76px;
+        align-items: center;
+        margin-left: 32px;
+        gap: 12px;
+        button {
+          border: none;
+          background-color: transparent;
+        }
+        button:hover {
+          cursor: pointer;
+          svg {
+            fill: $buttun-color;
+            path {
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wigthspace {
+  margin-bottom: 40px;
+}

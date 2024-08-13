@@ -1,0 +1,104 @@
+@import '../../styles/variabels';
+
+.wrapper {
+  display: flex;
+  width: 1366px;
+  height: 62px;
+  border-bottom: 1px solid $border-header;
+  color: $font-black;
+  .logoheader {
+    margin-top: 12px;
+    margin-left: 24px;
+  }
+}
+
+.buttonMenu {
+  display: flex;
+  margin-top: 11px;
+  margin-left: 66px;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background: $buttun-color;
+  cursor: pointer;
+  svg {
+    margin-left: 19px;
+  }
+  p {
+    margin-left: 11px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+
+.menu {
+  display: flex;
+  margin-left: 16px;
+  margin-top: 15px;
+
+  margin-right: 191px;
+  width: 549px;
+  height: 32px;
+  gap: 12px;
+  li {
+    display: flex;
+
+    padding: 12px;
+    width: auto;
+    height: 32px;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+  }
+  li:hover {
+    a {
+      color: $font-hover-button;
+    }
+    background: $hover-header-button;
+  }
+}
+
+.submenu {
+  display: flex;
+  width: 248px;
+  height: 62px;
+  padding-left: 24px;
+  align-items: center;
+  gap: 18px;
+
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 56px;
+    height: 32px;
+    background: #fff;
+    border: 2px solid $border-header;
+    border-radius: 10px;
+    :first-child {
+      border-radius: 2px;
+    }
+  }
+  span {
+    width: 24px;
+    height: 24px;
+  }
+  .chat {
+    position: relative;
+    .chatCount {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+    }
+  }
+}

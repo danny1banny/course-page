@@ -1,0 +1,86 @@
+@import '../../styles/variabels';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  margin-left: 71px;
+  gap: 16px;
+  color: $font-black;
+
+  .listTask {
+    display: flex;
+    flex-direction: column;
+    width: 1224px;
+
+    .task {
+      display: flex;
+      margin-top: 16px;
+      padding: 16px 0 16px 26px;
+      border-radius: 12px;
+      border: 1px solid $border-color;
+      align-items: center;
+
+      h3 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-top: 4px;
+      }
+      .desc {
+        display: flex;
+        margin-left: 12px;
+        flex-direction: column;
+        width: 582px;
+
+        p {
+          width: min-content;
+          padding: 6px 12px 6px 12px;
+          background-color: $desc-comp;
+          gap: 8px;
+          border-radius: 8px;
+
+          font-size: 12px;
+          line-height: 12px;
+          font-weight: 500;
+        }
+        div {
+          display: flex;
+          gap: 10px;
+        }
+      }
+      .time {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 151px;
+        margin-left: 64px;
+        .grayFont {
+          color: $font-gray
+        }
+      }
+      .progress {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 213px;
+        margin-left: 64px;
+        .okey {
+          color: #08cc33;
+        }
+        .error {
+          color: #fc2c38;
+        }
+        .process {
+          color: $buttun-color;
+        }
+        .notStart {
+          color: #848484;
+        }
+      }
+    }
+  }
+}
+
+
+
