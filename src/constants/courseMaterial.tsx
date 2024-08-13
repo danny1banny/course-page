@@ -1,7 +1,5 @@
 import * as Icons from '../assets/CourseMaterial/icons';
 
-
-
 export const tags = [
   {
     id: 1,
