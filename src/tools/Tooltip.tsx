@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from 'react';
-import classes from './ToolTipComponent.module.scss';
+import styles from './ToolTipComponent.module.scss';
 
 type PropsType = {
   children: ReactElement;
@@ -10,10 +10,10 @@ type PropsType = {
 
 const ToolTipComponent: React.FC<PropsType> = ({ children, text, customClass }) => {
   const [showToolTip, setShowToolTip] = useState(false);
-  const toolTipClasses = customClass ? `${classes.tooltip} ${customClass}` : `${classes.tooltip}`;
+  const toolTipClasses = customClass ? `${styles.tooltip} ${customClass}` : `${styles.tooltip}`;
 
   const onMouseEnterHandler = () => {
-    setShowToolTip(true);
+    setShowToolTip(true); 
   };
 
   const onMouseLeaveHandler = () => {
@@ -22,7 +22,7 @@ const ToolTipComponent: React.FC<PropsType> = ({ children, text, customClass }) 
 
   return (
     <div
-      className={classes.container}
+      className={styles.container}
       onMouseEnter={onMouseEnterHandler}
       onMouseLeave={onMouseLeaveHandler}
     >
