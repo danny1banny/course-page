@@ -7,7 +7,7 @@ const CourseMaterial = () => {
 
   function truncate(str:string, maxlengh: number) {
     return (str.length > maxlengh) ?
-      <ToolTipComponent customClass={styles.customClass} text={str}>{<div>{str.slice(0, maxlengh - 1) + '…'}</div>}</ToolTipComponent> : str;
+      <ToolTipComponent customClass={styles.right} text={str}>{<div>{str.slice(0, maxlengh - 1) + '…'}</div>}</ToolTipComponent> : str;
   }
 
   return (

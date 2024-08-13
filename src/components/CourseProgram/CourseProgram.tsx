@@ -69,7 +69,7 @@ const CourseProgram: FC = () => {
             <Icons.Check />
             <div className={styles.desc}>
               <div>
-                <p>Тест</p> <ToolTipComponent text={someText}><Icons.Attention /></ToolTipComponent>
+                <p>Тест</p> <ToolTipComponent  customClass={styles.right} text={someText}><Icons.Attention /></ToolTipComponent>
               </div>
 
               <h3>Построение эффективной команды</h3>

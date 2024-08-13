@@ -7,6 +7,7 @@
 }
 
 .tooltip {
+
   position: absolute;
 
   width: 280px;
@@ -16,6 +17,7 @@
   background-color: #848484;
   border-radius: 12px ;
   transform: translateX(12%);
+ 
 }
 
 .tooltip::after {
